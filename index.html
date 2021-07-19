@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Main Template CSS File-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Front End</title>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <a href="#" class="logo"><img src="img/logo.png" alt="Logo" /></a>
+            <nav>
+                <div class="toggle toggle-menu"><span>_</span><span>_</span><span>_</span></div>
+                <ul id="nav-list"></ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Start Landing -->
+        <div class="landing ">
+            <div class="background animation_go"></div>
+            <div class="container">
+                <h1>Front End</h1>
+                <p>Front-end web development <br>is the practice of converting data to a graphical interface,
+                    Through the use of HTML, CSS, and JavaScript
+                </p>
+            </div>
+        </div>
+        <!-- End Landing -->
+        <!-- Start Section 1 -->
+        <section id="section1" data-nav="HTML">
+            <div class="container">
+                <div class="top">
+                    <h2>HTML</h2><span class="collapsible"></span></span>
+                </div>
+                <p>The HyperText Markup Language, or HTML is
+                    the standard markup language for documents designed to
+                    be displayed in a web browser. It can be assisted by technologies
+                    such as Cascading Style Sheets (CSS) and
+                    scripting languages such as JavaScript.
+                    <br>
+                    <br>
+                    Web browsers receive HTML documents from a web server or
+                    from local storage and render the documents
+                    into multimedia web pages.
+                </p>
+            </div>
+        </section>
+        <!-- End Section 1 -->
+        <!-- Start Section 2 -->
+        <section id="section2" data-nav="CSS">
+            <div class="container">
+                <div class="top">
+                    <h2>CSS</h2><span class="collapsible"></span></span>
+                </div>
+                <p>Cascading Style Sheets (CSS) is a style sheet language used for
+                    describing the presentation of a document written in a markup language such as HTML.
+                    <br>
+                    <br>
+                    CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+                    <br>
+                    <br>
+                    CSS is designed to enable the separation of presentation and content, including layout, colors, and
+                    fonts. This separation can improve content accessibility, provide more flexibility and control in
+                    the specification of presentation characteristics, enable multiple web pages to share formatting by
+                    specifying the relevant CSS in a separate .
+                </p>
+            </div>
+        </section>
+        <!-- End Section 2 -->
+        <!-- Start Section 3 -->
+        <section id="section3" data-nav="JavaScript">
+            <div class="container">
+                <div class="top">
+                    <h2>JavaScript</h2><span class="collapsible"></span></span>
+                </div>
+                <p>JavaScript often abbreviated as JS,
+                    is a programming language that conforms to the ECMAScript specification J
+                    avaScript is high-level, often just-in-time compiled, and
+                    multi-paradigm. It has curly-bracket syntax, dynamic
+                    typing, prototype-based object-orientation, and first-class functions.
+                    <br>
+                    <br>
+                    Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.
+                    Over 97% of websites use it client-side for web page behavior,
+                    often incorporating third-party libraries.
+                </p>
+            </div>
+        </section>
+        <!-- End Section 3 -->
+        <!-- Start Section 4 -->
+        <section id="section4" data-nav="DOM">
+            <div class="container">
+                <div class="top">
+                    <h2>DOM</h2><span class="collapsible"></span></span>
+                </div>
+                <p>The Document Object Model (DOM) is a cross-platform and language-independent interface that treats an
+                    XML or HTML document as a tree structure wherein each node is an object representing a part of the
+                    document. The DOM represents a document with a logical tree. Each branch of the tree ends in a node,
+                    and each node contains objects.
+                    <br>
+                    The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each
+                    node contains objects.
+                    <br>
+                    <br>
+                    DOM methods allow programmatic access to the tree; with them one can change the structure, style or
+                    content of a document. Nodes can have event handlers attached to them. Once an event is triggered,
+                    the event handlers get executed.
+                </p>
+            </div>
+        </section>
+        <!-- End Section 4 -->
+        <!-- Add New Section by Form -->
+        <div class="new_sec">
+            <div class="container">
+                <button id="new"> + Add New Section</button>
+                <div class="form_container">
+                    <!-- i set onsubmit property To prevent the page do reload -->
+                    <form onsubmit="return false">
+                        <div class="input_form">
+                            <label for="heading">Heading</label>
+                            <input id="heading" type="text">
+                            <label for="para">Paragraph</label>
+                            <textarea id="para" cols="30" rows="5"></textarea>
+                            <div id="error"></div>
+                            <div class="buttons">
+                                <input type="reset" value="Reset">
+                                <input id="add" type="submit" value="Add">
+                                <button id="cancel">Cancel</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End New Section Form -->
+    </main>
+    <!-- Start ScrolltoTop  -->
+    <button id="scroll"></button>
+    <!-- End ScrolltoTop  -->
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>
+                    <small>&copy 2021 -
+                        <span class="name">Ahmed Bayoumi
+                            <span class="this_is_me">This is me</span>
+                        </span> All Right Reserved
+                    </small>
+                </p>
+            </div>
+    </footer>
+    <!-- End Footer -->
+    <!--Main JavaScript File-->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
