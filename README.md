@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [General_info]
-- [Coding]
+- [Languages]
 - [Features]
 - [Sources]
 
@@ -13,7 +13,7 @@ My Landing page, which is the implementation of the first project of NANODEGREE 
 
 I have some design skills so I designed this page from scratch and then created my code.
 
-## Coding
+## Languages
 
 ##### Project is created with:
 
@@ -27,7 +27,6 @@ I have some design skills so I designed this page from scratch and then created 
 ##### My Landing page is a dynamic page that has some features:
 
 - There are 4 sections with a dynamically updating navigational menu.
-- Add active class to section when it on viewport and its link.
 - Distinguish the section in viewport and its link in nav list.
 - There is a scroll to top button on the page that’s only visible when the user scrolls below the fold of the page.
 - Hide fixed navigation bar while not scrolling.
